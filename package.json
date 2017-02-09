@@ -1,0 +1,29 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "to do app with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpjitendrapal/todo.git"
+  },
+  "author": "Jitendra Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpjitendrapal/todo/issues"
+  },
+  "homepage": "https://github.com/jpjitendrapal/todo#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "lite-server": "^2.2.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.12"
+  }
+}
