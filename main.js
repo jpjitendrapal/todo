@@ -1,1 +1,0 @@
-import World from './src/index.jsx';
