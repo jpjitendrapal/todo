@@ -1,0 +1,59 @@
+body{
+    background-color: #b2b2b2;
+}
+.main-ct{
+    margin: 0 30px;
+}
+button{
+    width: 150px;
+    height: 30px;
+
+}
+
+.center{
+    text-align: center;
+}
+.hidden{
+    display: none !important;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.sections{
+     display: table; 
+}
+.section{
+    padding: 20px;
+    display: table-cell;
+}
+#friendList .friendCheck{
+    float: left;
+}
+#addBillForm {
+    max-width: 300px;
+}
+#billList{
+    border: 1px solid black;
+    padding: 10px;
+}
+.bill{
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.bill:last-child{
+    border-bottom: none;
+}
+.deleteBillBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #a31515;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Split Your Bills</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="main-ct">
+        <h1 class="center">Split Your Bills</h1>
+        <button id="showAddBillFrom">Add Bill</button>
+        <button id="showAddFriendForm">Add Friend</button>
+
+
+        <div class="sections">
+            <div id="section1" class="section">
+                <div id="billList"></div>
+            </div>
+            <div id="section2" class="section hidden">
+                <h3>Add New Bill</h3>
+                <form id="addBillForm">
+                    <label class="">Description:</label><br/>
+                    <input class="" id="billDesc" name="desc" type="text" /><br/>
+
+                    <label class="">Amount: </label><br/>
+                    <input class="" id="billAmount" name="amount" type="number" /><br/>
+
+                    <label class="">Friends:</label>
+                    <div class="" id="friendList">
+                    </div>
+                    <div class="clear"></div>
+                    <button class="center" id="crateBillBtn">Create Bill</button>
+                </form>
+            </div>
+            <div id="section3" class="section hidden">
+                <h3>Add New Friend</h3>
+                <form id="addFriend">
+                    <label>Frined Name:</label><br/>
+                    <input name="name" type="text" id="friendName" /><br/><br/>
+                    <button id="addFriendBtn">Add Friend</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
