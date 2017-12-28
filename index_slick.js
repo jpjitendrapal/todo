@@ -71,7 +71,6 @@ class Hello extends React.Component {
                 {images.map((image,key) => <div key={key}><img className="slick-img" src={"http://n1.sdlcdn.com/" + image} /></div>)}
               </Slider>
             </div>
-            
       </div>
     );
   }

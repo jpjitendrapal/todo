@@ -22,3 +22,12 @@
 .slick-next:before, .slick-prev:before{
     font-size: 30px !important;
 }
+
+.input-ct{
+    position: relative;
+}
+#autoSuggestion{
+    position: absolute;
+    top:0;
+    
+}

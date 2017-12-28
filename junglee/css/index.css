@@ -1,0 +1,18 @@
+.margintop10{
+    margin-top: 10px;
+}
+.paddingtop10{
+    padding-top: 10px;
+}
+.hidden{
+    display: none;
+}
+.error{
+    color: red;
+}
+.bold{
+    font-weight: bold;
+}
+.disabled{
+    pointer-events: none;
+}

@@ -1,5 +1,20 @@
 // Split your bills
 var SplitBills = (function () {
+    function Bill(id,desc,amount,friends){
+        this.expenseDesc = desc;
+        this.amount=amount;
+        this.friends=friends;
+        this.billId = id;
+    }
+    Bill.prototype={
+        getIndAmount: function(){
+            return (this.amount/this.friends.length).toFixed(2);
+        },
+        getId: function(){
+            return this.billId;
+        }
+    }
+
     var cache, fn;
     cache = {
         bills: [],
@@ -101,13 +116,15 @@ var SplitBills = (function () {
             expenseDesc = document.getElementById("billDesc").value;
             amount = document.getElementById("billAmount").value;
 
-            var newBill = {
-                billId: cache.bills.length+1,
-                expenseDesc: expenseDesc,
-                amount: amount,
-                friends: friends,
-                indAmout: (amount/friends.length).toFixed(2)
-            };
+            var newBill = new Bill(cache.bills.length+1, expenseDesc, amount, friends);
+            
+            // {
+            //     billId: cache.bills.length+1,
+            //     expenseDesc: expenseDesc,
+            //     amount: amount,
+            //     friends: friends,
+            //     indAmout: (amount/friends.length).toFixed(2)
+            // };
 
             cache.bills.push(newBill);
             fn._addBillsToLocal(cache.bills);
@@ -147,7 +164,7 @@ var SplitBills = (function () {
     }
 
     return {
-        init: function(){ fn._init.apply(this,arguments) }
+        init: function(){ fn._init.apply(this,arguments); }
     }
 })();
 
